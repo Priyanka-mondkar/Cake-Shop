@@ -1,6 +1,7 @@
 🍰 Cake Shop Website
 A responsive and user-friendly Cake Shop Website where customers can browse cakes, place orders, and manage their cart online.
 This project is built using HTML, CSS, JavaScript for the frontend and Python + MySQL for the backend.
+
 📌 Features
 🧁 Browse different cake categories
 🔍 Search cakes easily
@@ -12,6 +13,7 @@ This project is built using HTML, CSS, JavaScript for the frontend and Python + 
 📱 Responsive Design
 🛠 Admin Dashboard
 🗄 Database connectivity using MySQL
+
 🛠 Technologies Used
 Frontend
 HTML
@@ -20,6 +22,7 @@ JavaScript
 Backend
 Python
 MySQL
+
 📂 Project Structure
 Bash
 Cake-Shop/
@@ -37,6 +40,7 @@ Cake-Shop/
 │   ├── cakeshop.sql
 │
 └── README.md
+
 ⚙ Installation Steps
 1️⃣ Clone the Repository
 Bash
@@ -57,14 +61,17 @@ cakeshop.sql
 5️⃣ Run the Backend Server
 Bash
 python app.py
+
 🎯 Future Enhancements
 Online Payment Integration
 Email Notifications
 Live Order Tracking
 AI-based Cake Recommendations
+
 Mobile Application
 👩‍💻 Author
 Priyanka Mondkar
 BCA Student | Aspiring Full Stack Developer
+
 📜 License
 This project is created for educational purposes only.
