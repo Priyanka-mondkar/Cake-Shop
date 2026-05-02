@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ffe6f0, #ffb6c1);
+    padding:40px 20px;
+}
+
+
+/* Back Button */
+.back-btn {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #c77482;
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 80px;
+    height: 30px;
+}
+
+
+
+
+
+.title{
+    text-align:center;
+    color:#cd6084;
+    margin-bottom:30px;
+}
+
+.wishlist-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.wishlist-card{
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.wishlist-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.wishlist-card h3{
+    margin:10px 0;
+    color:#ff4d88;
+}
+
+.remove-btn{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.remove-btn:hover{
+    background:#e60073;
+}

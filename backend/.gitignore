@@ -1,0 +1,190 @@
+# ============================================
+# CAKE SHOP APPLICATION - .gitignore
+# Python Flask Backend + HTML/CSS/JS Frontend
+# ============================================
+
+# ------------------ Python ------------------
+# Bytecode & compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+venv.bak/
+env.bak/
+
+# Python distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.htmlcov/
+.tox/
+.pytest_cache/
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ------------------ Flask ------------------
+# Instance folder (local configuration)
+instance/
+.flaskenv
+.wsgi
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+flask.log
+
+# ------------------ IDE & Editors ----------
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ------------------ OS generated ----------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*.~lock.*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ------------------ Secrets & Keys ----------
+# Environment variables with sensitive data
+.env.local
+.env.production
+.secrets
+config.local.py
+credentials.json
+*.key
+*.pem
+*.crt
+
+# Database credentials (if any)
+database.ini
+mysql.conf
+postgresql.conf
+
+# API keys storage
+api_keys.txt
+keys.py
+
+# ------------------ Frontend build ----------
+# Node.js (if you ever add any build tools)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Frontend build outputs (if you add bundlers later)
+dist/
+build/
+static/dist/
+*.css.map
+*.js.map
+
+# ------------------ Application specific ---
+# Cake shop data (if you later move to file-based storage)
+orders_backup.json
+contact_messages_backup.json
+*.bak
+
+# Session files
+flask_session/
+sessions/
+
+# Uploaded images (if you extend with image uploads)
+uploads/
+static/uploads/
+media/
+
+# Debug & temp runtime files
+debug.log
+error.log
+runtime/
+tmp/
+
+# ------------------ Documentation (optional) --
+# Exclude generated documentation
+docs/_build/
+site/
+
+# ------------------ Notebooks (if any) -------
+*.ipynb_checkpoints/
+*.ipynb
+
+# ------------------ Docker ------------------
+.dockerignore
+*.pid
+
+# ------------------ .gitignore self ---------
+# Never ignore .gitignore itself! 
+# But ignore any local modifications to gitignore?
+# No, keep it tracked.

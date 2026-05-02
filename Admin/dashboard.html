@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sweetora Admin Dashboard</title>
+
+<link rel="stylesheet" href="../css/admin/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!---- sidebar ---->
+<div class="sidebar">
+
+<h2>Sweetora Admin</h2>
+
+<p class="section">MAIN</p>
+
+<ul>
+<li class="active">
+<a href="dashboard.html" class="anchor_style">
+<i class="fa-solid fa-gauge"></i> Dashboard
+</a>
+</li>
+
+<li>
+<a href="product1.html" class="anchor_style">
+<i class="fa-solid fa-box"></i> Product
+</a>
+</li>
+
+<li>
+<a href="order1.html" class="anchor_style">
+<i class="fa-solid fa-cart-shopping"></i> Orders
+</a>
+</li>
+
+<li>
+<a href="user.html" class="anchor_style">
+<i class="fa-solid fa-users"></i> Users
+</a>
+</li>
+
+<li>
+<a href="reservation1.html" class="anchor_style">
+<i class="fa-solid fa-calendar-check"></i> Reservations
+</a>
+</li>
+
+<li>
+<a href="custom_order.html" class="anchor_style">
+<i class="fa-solid fa-cake-candles"></i> Custom Orders
+</a>
+</li>
+
+<li>
+<a href="feedback.html" class="anchor_style">
+<i class="fa-solid fa-star"></i> Feedback
+</a>
+</li>
+
+<li>
+<a href="messages.html" class="anchor_style">
+<i class="fa-solid fa-envelope"></i> Contact Messages
+</a>
+</li>
+
+<li onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</li>
+
+</ul>
+
+<!-- ✅ Sidebar मध्ये फक्त menu -->
+<p class="section">CHARTS</p>
+
+<!-- <ul>
+<li onclick="loadChart('bar')">
+<i class="fa-solid fa-chart-column"></i> Bar
+</li>
+
+<li onclick="loadChart('pie')">
+<i class="fa-solid fa-chart-pie"></i> Pie
+</li>
+
+<li onclick="loadChart('line')">
+<i class="fa-solid fa-chart-line"></i> Line
+</li>
+</ul> -->
+<ul>
+<li>
+<a href="#" onclick="loadChart('bar'); return false;">
+    <i class="fa-solid fa-chart-column"></i> Bar
+</a>
+</li>
+
+<li>
+<a href="#" onclick="loadChart('pie'); return false;">
+    <i class="fa-solid fa-chart-pie"></i> Pie
+</a>
+</li>
+
+<li>
+<a href="#" onclick="loadChart('line'); return false;">
+    <i class="fa-solid fa-chart-line"></i> Line
+</a>
+</li>
+</ul>
+
+
+</div>
+
+<!---- main ---->
+<div class="main">
+
+<h1>Admin Dashboard</h1>
+
+<div class="cards">
+
+<!-- Revenue -->
+<div class="card">
+<div class="card-info">
+<h3>Revenue</h3>
+<p id="revenue">0</p>
+<span class="green">+20%</span>
+</div>
+
+<div class="progress-circle orange">
+<span>80%</span>
+</div>
+</div>
+
+<!-- Users -->
+<div class="card">
+<div class="card-info">
+<h3>Users</h3>
+<p id="users">0</p>
+<span class="green">+12%</span>
+</div>
+
+<div class="progress-circle blue">
+<span>60%</span>
+</div>
+</div>
+
+<!-- Products -->
+<div class="card">
+<div class="card-info">
+<h3>Products</h3>
+<p id="products">0</p>
+<span class="green">+8%</span>
+</div>
+
+<div class="progress-circle green-circle">
+<span>75%</span>
+</div>
+</div>
+
+<!-- Orders -->
+<div class="card">
+<div class="card-info">
+<h3>Orders</h3>
+<p id="orders">0</p>
+<span class="red">-5%</span>
+</div>
+
+<div class="progress-circle red-circle">
+<span>50%</span>
+</div>
+</div>
+
+</div>
+
+<!-- 🔥 CHART (correct place)
+<canvas id="barChart" style="margin-top:30px;"></canvas> -->
+<div class="chart-container">
+    <canvas id="barChart"></canvas>
+</div>
+
+
+</div>
+
+<script src="../script/admin/dashboard.js"></script>
+
+</body>
+</html>

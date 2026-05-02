@@ -1,0 +1,141 @@
+:root {
+    --pink-primary: #e91e63;
+    --pink-light: #fce4ec;
+    --text-grey: #777;
+    --border-color: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c25d82;; /* Rose très pâle en fond */
+}
+
+.container {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+    background: #d9c8ce;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Côté Gauche - Image */
+.hero-section {
+    flex: 1;
+    background: url('votre_image_gateau.jpg') center/cover;
+    /* Pour test sans image locale : */
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/signup.jpg);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Brush Script MT', cursive;
+    line-height: 1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Côté Droit - Formulaire */
+.form-section {
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img { width: 45px; margin-bottom: 10px; }
+
+.brand-name {
+    font-family: 'Brush Script MT', cursive;
+    color: var(--pink-primary);
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    color: var(--text-grey);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--pink-primary);
+    font-size: 1.2rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    outline: none;
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--pink-primary);
+    background: white;
+}
+
+/* Bouton */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: var(--pink-primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+.btn-primary:hover {
+    background: #d81b60;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--text-grey);
+}
+
+.footer-text a {
+    color: var(--pink-primary);
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Sweetora Admin - Custom Orders</title>
+
+<link rel="stylesheet" href="../css/admin/custom_order.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Sweetora Admin</h2>
+
+<p class="section">MAIN</p>
+
+<ul>
+<li>
+<a href="dashboard.html" class="anchor_style">
+<i class="fa-solid fa-gauge"></i> Dashboard
+</a>
+</li>
+
+<li>
+<a href="product1.html" class="anchor_style">
+<i class="fa-solid fa-box"></i> Product
+</a>
+</li>
+
+<li>
+<a href="order1.html" class="anchor_style">
+<i class="fa-solid fa-cart-shopping"></i> Orders
+</a>
+</li>
+
+<li>
+<a href="user.html" class="anchor_style">
+<i class="fa-solid fa-users"></i> Users
+</a>
+</li>
+
+<li>
+<a href="reservation1.html" class="anchor_style">
+<i class="fa-solid fa-calendar-check"></i> Reservations
+</a>
+</li>
+
+<li class="active">
+<a href="custom_order.html" class="anchor_style">
+<i class="fa-solid fa-cake-candles"></i> Custom Orders
+</a>
+</li>
+
+<li>
+<a href="feedback.html" class="anchor_style">
+<i class="fa-solid fa-star"></i> Feedback
+</a>
+</li>
+
+<li>
+<a href="messages.html" class="anchor_style">
+<i class="fa-solid fa-envelope"></i> Contact Messages
+</a>
+</li>
+
+<!-- </ul>
+    <p class="section">CHARTS</p>
+        <ul>
+            <li><i class="fa-solid fa-chart-column"></i> Bar</li>
+            <li><i class="fa-solid fa-chart-pie"></i> Pie</li>
+            <li><i class="fa-solid fa-chart-line"></i> Line</li>
+        </ul> -->
+</div>
+
+
+<div class="main">
+
+<h1>Manage Custom Orders</h1>
+
+<div class="orders-table">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Order ID</th>
+<th>Customer</th>
+<th>Cake Type</th>
+<th>Flavor</th>
+<th>Weight</th>
+<th>Message</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>CO101</td>
+<td>Darshu</td>
+<td>Birthday Cake</td>
+<td>Chocolate</td>
+<td>2 kg</td>
+<td>Happy Birthday Mom</td>
+<td><span class="pending">Pending</span></td>
+<td>
+<button class="approve" onclick="approveOrder(this)">Approve</button>
+<button class="reject" onclick="rejectOrder(this)">Reject</button>
+</td>
+</tr>
+
+<tr>
+<td>CO102</td>
+<td>Riya</td>
+<td>Anniversary Cake</td>
+<td>Red Velvet</td>
+<td>1.5 kg</td>
+<td>Happy Anniversary</td>
+<td><span class="approved">Approved</span></td>
+<td>
+<button class="approve">Approve</button>
+<button class="reject">Reject</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="../script/admin/custom_order.js"></script>
+
+</body>
+</html>

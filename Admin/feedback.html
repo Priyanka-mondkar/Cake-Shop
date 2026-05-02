@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Sweetora Admin - Feedback</title>
+
+<link rel="stylesheet" href="../css/admin/feedback.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Sweetora Admin</h2>
+
+<p class="section">MAIN</p>
+
+<ul>
+<li>
+<a href="dashboard.html" class="anchor_style">
+<i class="fa-solid fa-gauge"></i> Dashboard
+</a>
+</li>
+
+<li>
+<a href="product1.html" class="anchor_style">
+<i class="fa-solid fa-box"></i> Product
+</a>
+</li>
+
+<li>
+<a href="order1.html" class="anchor_style">
+<i class="fa-solid fa-cart-shopping"></i> Orders
+</a>
+</li>
+
+<li>
+<a href="user.html" class="anchor_style">
+<i class="fa-solid fa-users"></i> Users
+</a>
+</li>
+
+<li>
+<a href="reservation1.html" class="anchor_style">
+<i class="fa-solid fa-calendar-check"></i> Reservations
+</a>
+</li>
+
+<li>
+<a href="custom_order.html" class="anchor_style">
+<i class="fa-solid fa-cake-candles"></i> Custom Orders
+</a>
+</li>
+
+<li class="active">
+<a href="feedback.html" class="anchor_style">
+<i class="fa-solid fa-star"></i> Feedback
+</a>
+</li>
+
+<li>
+<a href="messages.html" class="anchor_style">
+<i class="fa-solid fa-envelope"></i> Contact Messages
+</a>
+</li>
+
+<!-- </ul>
+    <p class="section">CHARTS</p>
+        <ul>
+            <li><i class="fa-solid fa-chart-column"></i> Bar</li>
+            <li><i class="fa-solid fa-chart-pie"></i> Pie</li>
+            <li><i class="fa-solid fa-chart-line"></i> Line</li>
+        </ul> -->
+
+</div>
+
+
+<div class="main">
+
+<h1>User Feedback</h1>
+
+<div class="feedback-table">
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Rating</th>
+<th>Message</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Darshu</td>
+<td>darshu@gmail.com</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td>Amazing cake and fast delivery!</td>
+<td>
+<button class="delete" onclick="deleteFeedback(this)">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Riya</td>
+<td>riya@gmail.com</td>
+<td>⭐⭐⭐⭐</td>
+<td>Beautiful cake design and great taste.</td>
+<td>
+<button class="delete" onclick="deleteFeedback(this)">Delete</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="../script/admin/feedback.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>order online - Sweetora cake</title>
+
+        <!----- Css File Link ----->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        </head>
+       <body>
+        <!----- Header Section ----->
+         <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="#" class="nav-logo">
+                        <h1 class="logo">🎂Sweetora</h1>
+                    </a>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="./home.html" onclick="showSection('home')">Home</a></li>
+                        <li><a href="./reservation.html" onclick="showSection('reserve')">Reservation</a></li>
+                        <li><a href="./menu.html" onclick="showSection('menu')">Menu</a></li>
+                        <li><a href="./customize order.html" onclick="showSection('customizeorder')">Customize Order</a></li>
+                        <li><a href="./order.html" onclick="showSection('order')">Order</a></li>
+                        <li><a href="./about.html" onclick="showSection('about')">About</a></li>
+                        <li><a href="./contact.html" onclick="showSection('contact')">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="nav-right">
+                    <div class="nav-icons">
+                       <a href="wishlist.html" class="icon-box">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count" id="wishlist-count">0</span> 
+                        </a>
+
+                        <a href="cart.html" class="icon-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <!-- <span class="count" id="cartCount">0</span> -->
+                        </a>
+            
+                        
+            <!-- USER MENU -->
+                <div class="user-menu">
+
+        <!-- Login Icon -->
+        <i id="loginIcon" class="fa-regular fa-user"></i>
+
+        <!-- Profile Image -->
+        <img id="profileImg" class="nav-profile-img" style="display:none;">
+
+        <!-- Dropdown -->
+        <div class="dropdown-menu" id="dropdownMenu">
+
+            <a href="./account.html">
+                <i class="fa fa-user"></i> My Account
+            </a>
+
+            <a href="./myorder.html">
+                <i class="fa fa-box"></i> Orders
+            </a>
+
+            <a href="./wishlist.html">
+                <i class="fa fa-heart"></i> Wishlist
+            </a>
+
+             <a href="./feedback.html">
+                <i class="fa-solid fa-comment-dots"></i> Feedback
+            </a>
+
+            <a href="#" id="logoutBtn">
+                <i class="fa fa-right-from-bracket"></i> Logout
+            </a>
+
+        </div>
+
+    </div>
+                    </div>
+                </div>
+            </nav>
+         </header>
+
+         <!-- Reservation hero Section -->
+         <section class="reservation-hero">
+    <div class="container">
+      <h1 class="animate-on-scroll">Reserve Your Table</h1>
+      <!-- <p class="animate-on-scroll">Reserve your table today and enjoy freshly baked cakes, delightful desserts, and a warm, welcoming dining experience.</p> -->
+    </div>
+  </section>
+
+          <!-- Reservation Section -->
+  <section class="reservation-section">
+    <div class="container">
+      <div class="reservation-content">
+        <div class="reservation-features animate-left">
+          <h2>Why Reserve with Us?</h2>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Exceptional Dining Experience</h3>
+              <p>From our carefully crafted menu to our attentive service, we ensure every meal is memorable.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-birthday-cake"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Fresh & Delicious Cakes</h3>
+            <p>We bake fresh cakes daily using high-quality ingredients to make your moments special.</p>
+          </div>
+        </div>
+        
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Perfect for Groups</h3>
+              <p>Whether it's an intimate dinner for two or a celebration with friends, we can accommodate groups of all sizes.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="feature-text">
+              <h3>Live Music</h3>
+              <p>Enjoy live music performances on Friday and Saturday evenings to enhance your dining experience.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-smile"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Happy Customers</h3>
+            <p>We focus on quality and service to make every customer happy.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Custom Cake Designs</h3>
+            <p>Design your own cake with your favorite flavor, theme, and style.</p>
+          </div>
+        </div>
+        </div>
+        
+        <div class="reservation-form-container animate-right">
+          <h2 class="form-title">Book Your Table</h2>
+          <form id="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Your Phone" required>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" class="form-control" required>
+                  <option value="" disabled selected>Select Guests</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7">7 People</option>
+                  <option value="8">8 People</option>
+                  <option value="9">9+ People</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" class="form-control" required>
+                  <option value="" disabled selected>Select Time</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                  <option value="22:00">10:00 PM</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="occasion">Special Occasion (Optional)</label>
+              <select id="occasion" class="form-control">
+                <option value="" selected>None</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="date">Date Night</option>
+                <option value="business">Business Dinner</option>
+                <option value="celebration">Celebration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="special-requests">Special Requests</label>
+              <textarea id="special-requests" class="form-control" rows="3" placeholder="Any special requests or dietary restrictions?"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Reserve Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Info Section -->
+  <section class="reservation-info">
+    <div class="container">
+      <div class="section-title animate-on-scroll">
+        <h2>Reservation Information</h2>
+        <p>Everything you need to know before making your reservation</p>
+      </div>
+      
+      <div class="info-cards">
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-clock"></i>
+          <h3>Operating Hours</h3>
+          <p>Tuesday - Sunday: 5 PM - 11 PM</p>
+          <p>Monday: Closed</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-users"></i>
+          <h3>Group Reservations</h3>
+          <p>We welcome groups of all sizes. For parties of 9 or more, please call us directly to ensure proper accommodations.</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Advance Booking</h3>
+          <p>Reservations are recommended, especially for weekend dining. You can book up to 30 days in advance.</p>
+        </div>
+        
+        <div class="info-card animate-on-scroll">
+          <i class="fas fa-utensils"></i>
+          <h3>Special Diets</h3>
+          <p>We accommodate dietary restrictions and allergies. Please inform us in advance so we can prepare accordingly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+          
+    <!-------- Footer section -------->
+        <footer class="footer">
+        <div class="footer-container">
+
+    <!-------- About section -------->
+        <div class="footer-box">
+            <h3>Sweetora Cakes</h3>
+            <p>Fresh, delicious and beautifully designed cakes for every occasion.</p>
+        </div>
+
+    <!-------- Quick Links section -------->
+        <div class="footer-box">
+                <h3>Quick Links</h3>
+            <ul>
+                 <li><a href="./home.html">Home</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./customize order.html">Customize Order</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    <!-------- Contact section -------->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+                <p>📍 Kankavli, Maharashtra</p>
+                <p>📞 +91 9403638873</p>
+                <p>✉ sweetora@gmail.com</p>
+        </div>
+
+    <!-------- Social section -------->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+        </div>
+    </div>
+            <div class="footer-bottom">
+                <p>© 2026 Sweetora Cakes | All Rights Reserved</p>
+            </div>
+            <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+    </footer> 
+    
+    <!-------- Javascript file Link -------->
+      <script src="./script/script.js"></script>
+      <script src="./script/common.js"></script>
+      <!-- <script src="./script/profile.js"></script> -->
+      <script src="./script/login.js"></script>
+      <script src="./script/account.js"></script>
+      <script>
+          // Additional JavaScript for reservation page
+    document.addEventListener('DOMContentLoaded', function() {
+
+const dateInput = document.getElementById('date');
+const today = new Date();
+const formattedDate = today.toISOString().split('T')[0];
+dateInput.min = formattedDate;
+
+const maxDate = new Date();
+maxDate.setDate(today.getDate() + 30);
+const formattedMaxDate = maxDate.toISOString().split('T')[0];
+dateInput.max = formattedMaxDate;
+
+const reservationForm = document.getElementById('reservation-form');
+
+reservationForm.addEventListener('submit', async function(e) {
+
+e.preventDefault();
+
+const data = {
+
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+phone: document.getElementById("phone").value,
+guests: document.getElementById("guests").value,
+reservation_date: document.getElementById("date").value,
+reservation_time: document.getElementById("time").value,
+occasion: document.getElementById("occasion").value,
+message: document.getElementById("special-requests").value
+
+};
+
+try{
+
+const response = await fetch("http://127.0.0.1:5000/api/reservation",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify(data)
+
+});
+
+const result = await response.json();
+
+if(response.ok){
+
+alert("Reservation booked successfully 🎉");
+
+reservationForm.reset();
+window.location.href = "menu.html";
+
+}else{
+
+alert(result.error);
+
+}
+
+}catch(error){
+
+console.error(error);
+
+alert("Server error");
+
+}
+
+});
+
+});
+  </script>
+</body>
+</html>
+
+      
+
+  

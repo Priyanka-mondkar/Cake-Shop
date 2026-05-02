@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>order online - Sweetora cake</title>
+
+        <!----- Css File Link ----->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        </head>
+       <body>
+        <!----- Header Section ----->
+         <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="#" class="nav-logo">
+                        <h1 class="logo">🎂Sweetora</h1>
+                    </a>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="./home.html" onclick="showSection('home')">Home</a></li>
+                        <li><a href="./reservation.html" onclick="showSection('reserve')">Reservation</a></li>
+                        <li><a href="./menu.html" onclick="showSection('menu')">Menu</a></li>
+                        <li><a href="./customize order.html" onclick="showSection('customizeorder')">Customize Order</a></li>
+                        <li><a href="./order.html" onclick="showSection('order')">Order</a></li>
+                        <li><a href="./about.html" onclick="showSection('about')">About</a></li>
+                        <li><a href="./contact.html" onclick="showSection('contact')">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="nav-right">
+                    <div class="nav-icons">
+                        <a href="wishlist.html" class="icon-box">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count" id="wishlist-count">0</span> 
+                        </a>
+
+                        <a href="cart.html" class="icon-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <!-- <span class="count" id="cartCount">0</span> -->
+                        </a>
+                        
+                        <!-- USER MENU -->
+    <div class="user-menu">
+
+        <!-- Login Icon -->
+        <i id="loginIcon" class="fa-regular fa-user"></i>
+
+        <!-- Profile Image -->
+        <img id="profileImg" class="nav-profile-img" style="display:none;">
+
+        <!-- Dropdown -->
+        <div class="dropdown-menu" id="dropdownMenu">
+
+            <a href="./account.html">
+                <i class="fa fa-user"></i> My Account
+            </a>
+
+            <a href="./myorder.html">
+                <i class="fa fa-box"></i> Orders
+            </a>
+
+            <a href="./wishlist.html">
+                <i class="fa fa-heart"></i> Wishlist
+            </a>
+
+             <a href="./feedback.html">
+                <i class="fa-solid fa-comment-dots"></i> Feedback
+            </a>
+
+            <a href="#" id="logoutBtn">
+                <i class="fa fa-right-from-bracket"></i> Logout
+            </a>
+
+        </div>
+
+    </div>
+                    </div>
+                </div>
+            </nav>
+         </header>
+
+       
+<section class="order-hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Order Online</h1>
+            <p>Enjoy our freshly baked cakes and desserts from the comfort of your home</p>
+        </div>
+    </div>
+</section>
+
+<section class="order-steps">
+    <div class="steps-container">
+        <div class="step active" id="step-order"><div class="step-icon"><i class="fas fa-shopping-cart"></i></div><div class="step-text">Your Order</div></div>
+        <div class="step" id="step-delivery"><div class="step-icon"><i class="fas fa-truck"></i></div><div class="step-text">Delivery Info</div></div>
+        <div class="step" id="step-payment"><div class="step-icon"><i class="fas fa-credit-card"></i></div><div class="step-text">Payment</div></div>
+        <div class="step" id="step-confirm"><div class="step-icon"><i class="fas fa-check-circle"></i></div><div class="step-text">Confirmation</div></div> 
+    </div>
+</section>
+
+<section class="order-section">
+    <div class="order-content">
+        
+        <div class="order-cart animate-left">
+            <h3>Your Order</h3>
+            <div class="cart-items-container"> <div class="cart-items">
+                    
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="summary-row"><span>Subtotal</span><span>2,150</span></div>
+                <div class="summary-row"><span>deliveryFee</span><span>50</span></div>
+                <div class="summary-row total"><span>Total</span><span>2,250</span></div>
+            </div>
+            
+            <div class="order-actions">
+                <button class="continue-shopping">Continue Shopping</button>
+                <button class="checkout-btn" >Process To Checkout</button>
+            </div>
+        </div>
+
+        <div class="order-form animate-right">
+            <h3>Order Details</h3>
+            
+            <div class="form-scroll-container">
+                <div class="form-section">
+                    <h4><i class="fas fa-user"></i> Personal Information</h4>
+                    <div class="form-row">
+                        <input type="text" id="fname" placeholder="First Name" class="form-control">
+                        <input type="text" id="lname" placeholder="Last Name" class="form-control">
+                    </div>
+                    <input type="email" id="email" placeholder="Email Address" class="form-control">
+                    <input type="tel" id="phone" placeholder="Phone Number" class="form-control">
+                </div>
+
+                <div class="form-section">
+                    <h4><i class="fas fa-map-marker-alt"></i> Delivery Information</h4>
+                    <div class="delivery-options">
+                        <div class="delivery-option selected"><i class="fas fa-truck"></i><span>Delivery</span></div>
+                        <div class="delivery-option"><i class="fas fa-store"></i><span>Pickup</span></div>
+                    </div>
+                    <input type="text" id="address" placeholder="Full Address" class="form-control">
+                    <div class="form-row">
+                        <input type="text" id="city" placeholder="City" class="form-control">
+                        <input type="text" id="zip" placeholder="ZIP Code" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4><i class="fas fa-credit-card"></i> Payment Method</h4>
+                    <div class="payment-methods">
+                        <div class="payment-method selected" data-method="card"><i class="fas fa-credit-card"></i><span>Card</span></div>
+                        <div class="payment-method" data-method="cash"><i class="fas fa-money-bill-wave"></i><span>Cash</span></div>
+                        <div class="payment-method" data-method="scanner"><i class="fas fa-qrcode"></i><span>Scanner</span></div>
+                    </div>
+                    <!-- card details -->
+                <div id="card-details">
+                    <input type="text" placeholder="Card Number" class="form-control">
+                    <div class="form-row">
+                        <input type="text" placeholder="MM/YY" class="form-control">
+                        <input type="text" placeholder="CVV" class="form-control">
+                    </div>
+                </div>
+                    <!-- SCANNER (QR CODE) -->
+                <div id="scanner-details" class="hidden" style="text-align:center;">
+                    <p>Scan & Pay using any UPI App</p>
+                    <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TestPayment" alt="QR Code" width="200"> -->
+                    <img id="qrCode" src="" width="200">
+
+                    <div id="scan-result" style="margin-top:15px; font-weight:bold; color:green;"></div>
+
+                    <button onclick="fakeScan()">Simulate Scan</button>
+                </div>
+            </div>
+        </div>
+
+            <div class="order-actions">
+                <button class="continue-shopping">Back to Menu</button>
+                <button class="checkout-btn2" id="place-order-btn">Place Your Order</button>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <!-- Order Confirmation Modal -->
+  <div class="modal" id="confirmation-modal">
+    <div class="modal-content animate-scale">
+      <div class="modal-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h2>Order Confirmed!</h2>
+      <p>Thank you for your order! Your food is being prepared and will be delivered to you within 30-45 minutes.</p>
+      <p>You will receive a confirmation email shortly.</p>
+      <button class="modal-btn" id="modal-ok-btn">OK</button>
+    </div>
+  </div>
+  <!-------- Footer section -------->
+        <footer class="footer">
+        <div class="footer-container">
+
+    <!-------- About section -------->
+        <div class="footer-box">
+            <h3>Sweetora Cakes</h3>
+            <p>Fresh, delicious and beautifully designed cakes for every occasion.</p>
+        </div>
+
+    <!-------- Quick Links section -------->
+        <div class="footer-box">
+                <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./customize order.html">Customize Order</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    <!-------- Contact section -------->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+                <p>📍 Kankavli, Maharashtra</p>
+                <p>📞 +91 9403638873</p>
+                <p>✉ sweetora@gmail.com</p>
+        </div>
+
+    <!-------- Social section -------->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+        </div>
+    </div>
+            <div class="footer-bottom">
+                <p>© 2026 Sweetora Cakes | All Rights Reserved</p>
+            </div>
+            <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+    </footer> 
+    
+    <!-------- Javascript file Link -------->
+      <script src="./script/script.js"></script>
+      <script src="./script/order.js"></script>
+      <script src="./script/common.js"></script>
+      <!-- <script src="./script/profile.js"></script> -->
+      <script src="./script/login.js"></script>
+      <script src="./script/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+
+<link rel="stylesheet" href="./css/product.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <a href="menu.html" class="back-btn">← Back</a>
+
+
+<!-------- product image,name,price Selector -------->    
+<div class="product-container"> 
+
+<div class="product-image">
+<img id="productImage">
+<!-- ❤️ Heart Icon -->
+    <i class="fa-regular fa-heart wishlist-icon" onclick="addToWishlist(this)"></i>
+</div>
+
+<div class="product-info">
+
+<h2 id="productName"></h2>
+
+<p class="price">₹ <span id="productPrice"></span></p>
+
+
+<!-------- tabs Selector -------->
+<div class="tabs">
+
+<button class="tab-btn active" onclick="openTab('description')">
+Description
+</button>
+
+<button class="tab-btn" onclick="openTab('details')">
+Details
+</button>
+
+<button class="tab-btn" onclick="openTab('reviews')">
+Reviews
+</button>
+
+</div>
+
+<div id="description" class="tab-content active">
+<p id="productDescription"></p>
+</div>
+
+<div id="details" class="tab-content">
+
+<p><b>Type :</b> <span id="productType"></span></p>
+<p><b>Weight :</b> <span id="productWeight"></span></p>
+
+</div>
+
+<div id="reviews" class="tab-content">
+
+<div class="rating-summary">
+<span class="rating-number">4.8</span>
+<div class="stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-stroke"></i>
+</div>
+<p>Based on 120 reviews</p>
+</div>
+
+<div class="review-box">
+<p><b>Riya Sharma</b></p>
+<div class="review-stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p>The cake was very delicious and fresh. Loved the design!</p>
+</div>
+
+<div class="review-box">
+<p><b>Akash Patil</b></p>
+<div class="review-stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<p>Beautiful cake and perfect for birthday celebration.</p>
+</div>
+
+</div>
+
+<!-------- Quantity Selector -------->
+
+<div class="quantity-section">
+
+<p class="qty-title">Quantity</p>
+
+<div class="quantity-box">
+<button class="qty-btn" onclick="decreaseQty('qtyChocolateBox')">-</button>
+
+<input type="number" id="qtyChocolateBox" value="1" min="1">
+
+<button class="qty-btn" onclick="increaseQty('qtyChocolateBox')">+</button>
+</div>
+
+<div class="btn-group">
+    <button class="add-to-cart-btn" id="addToCartBtn">ADD TO CART</button>
+    <button class="buy-now-btn" id="buyNowBtn">BUY NOW</button>
+</div>
+
+<!-------- features Selector -------->
+<div class="product-features">
+
+<div class="feature">
+<i class="fa-solid fa-star"></i>
+<span>Premium Quality</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-bread-slice"></i>
+<span>Freshly Baked</span>
+</div>
+
+<div class="feature">
+<i class="fa-solid fa-hand"></i>
+<span>Handcrafted</span>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="./script/product.js"></script>
+<script src="./script/common.js"></script>
+<script src="./script/account.js"></script>
+</body>
+</html>

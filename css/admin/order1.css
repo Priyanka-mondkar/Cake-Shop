@@ -1,0 +1,125 @@
+body{
+margin:0;
+font-family:Arial;
+display:flex;
+background: #ffe6ec;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:300px;
+height:100vh;
+background: #f5b5c1;
+color:white;
+padding-top:20px;
+}
+
+
+
+
+
+
+.sidebar a{
+color:white;
+text-decoration:none;
+display:block;
+
+}
+
+.sidebar a:hover{
+
+color:white;
+}
+
+
+
+
+
+
+
+
+.sidebar h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar ul li{
+padding:15px 20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sidebar ul li:hover{
+background: #c45a6d;
+}
+
+.active{
+background: #c45a6d;
+}
+
+
+
+
+
+.main{
+flex:1;
+padding:30px;
+background: transparent;   /* 🔥 IMPORTANT */
+}
+
+.orders-table{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background: #7a3e4d;
+color:white;
+padding:12px;
+text-align:left;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+.status{
+padding:5px 10px;
+border-radius:5px;
+font-size:13px;
+}
+
+.pending{
+background:#ffe0a3;
+}
+
+.delivered{
+background:#c8f7c5;
+}
+
+.cancelled{
+background:#f8c1c1;
+}
+
+button{
+padding:6px 12px;
+border:none;
+background: #7a3e4d;
+color:white;
+border-radius:4px;
+cursor:pointer;
+}
